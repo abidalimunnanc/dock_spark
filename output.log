@@ -1,0 +1,94 @@
+24/08/13 15:50:05 WARN Utils: Your hostname, codespaces-070278 resolves to a loopback address: 127.0.0.1; using 10.0.1.88 instead (on interface eth0)
+24/08/13 15:50:05 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+24/08/13 15:50:06 INFO SparkContext: Running Spark version 3.5.2
+24/08/13 15:50:06 INFO SparkContext: OS info Linux, 6.5.0-1022-azure, amd64
+24/08/13 15:50:06 INFO SparkContext: Java version 21.0.3
+24/08/13 15:50:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/08/13 15:50:06 INFO ResourceUtils: ==============================================================
+24/08/13 15:50:06 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/08/13 15:50:06 INFO ResourceUtils: ==============================================================
+24/08/13 15:50:06 INFO SparkContext: Submitted application: StructuredNetworkWordCount
+24/08/13 15:50:06 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/08/13 15:50:06 INFO ResourceProfile: Limiting resource is cpu
+24/08/13 15:50:06 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/08/13 15:50:06 INFO SecurityManager: Changing view acls to: codespace
+24/08/13 15:50:06 INFO SecurityManager: Changing modify acls to: codespace
+24/08/13 15:50:06 INFO SecurityManager: Changing view acls groups to: 
+24/08/13 15:50:06 INFO SecurityManager: Changing modify acls groups to: 
+24/08/13 15:50:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: codespace; groups with view permissions: EMPTY; users with modify permissions: codespace; groups with modify permissions: EMPTY
+24/08/13 15:50:07 INFO Utils: Successfully started service 'sparkDriver' on port 39779.
+24/08/13 15:50:07 INFO SparkEnv: Registering MapOutputTracker
+24/08/13 15:50:07 INFO SparkEnv: Registering BlockManagerMaster
+24/08/13 15:50:07 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/08/13 15:50:07 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/08/13 15:50:07 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/08/13 15:50:07 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-a9912c53-3984-4566-a8fd-efe662deca27
+24/08/13 15:50:07 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/08/13 15:50:07 INFO SparkEnv: Registering OutputCommitCoordinator
+24/08/13 15:50:07 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/08/13 15:50:07 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/08/13 15:50:07 INFO Executor: Starting executor ID driver on host 911b95a3-8d9d-4316-9c29-836be5f90c42.internal.cloudapp.net
+24/08/13 15:50:07 INFO Executor: OS info Linux, 6.5.0-1022-azure, amd64
+24/08/13 15:50:07 INFO Executor: Java version 21.0.3
+24/08/13 15:50:07 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/08/13 15:50:07 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@16b249a0 for default.
+24/08/13 15:50:07 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46049.
+24/08/13 15:50:07 INFO NettyBlockTransferService: Server created on 911b95a3-8d9d-4316-9c29-836be5f90c42.internal.cloudapp.net:46049
+24/08/13 15:50:07 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/08/13 15:50:07 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 911b95a3-8d9d-4316-9c29-836be5f90c42.internal.cloudapp.net, 46049, None)
+24/08/13 15:50:07 INFO BlockManagerMasterEndpoint: Registering block manager 911b95a3-8d9d-4316-9c29-836be5f90c42.internal.cloudapp.net:46049 with 434.4 MiB RAM, BlockManagerId(driver, 911b95a3-8d9d-4316-9c29-836be5f90c42.internal.cloudapp.net, 46049, None)
+24/08/13 15:50:07 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 911b95a3-8d9d-4316-9c29-836be5f90c42.internal.cloudapp.net, 46049, None)
+24/08/13 15:50:07 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 911b95a3-8d9d-4316-9c29-836be5f90c42.internal.cloudapp.net, 46049, None)
+24/08/13 15:50:08 WARN TextSocketSourceProvider: The socket source should not be used for production applications! It does not support recovery.
+24/08/13 15:50:09 WARN ResolveWriteToStream: Temporary checkpoint location created which is deleted normally when the query didn't fail: /tmp/temporary-8eb7446d-2ae3-4b69-8d6e-52dc0c557451. If it's required to delete it under any circumstances, please set spark.sql.streaming.forceDeleteTempCheckpointLocation to true. Important to know deleting temp checkpoint folder is best effort.
+24/08/13 15:50:10 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+24/08/13 15:50:17 WARN GarbageCollectionMetrics: To enable non-built-in garbage collector(s) List(G1 Concurrent GC), users should configure it(them) to spark.eventLog.gcMetrics.youngGenerationGarbageCollectors or spark.eventLog.gcMetrics.oldGenerationGarbageCollectors
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++----+-----+
+|word|count|
++----+-----+
++----+-----+
+
+-------------------------------------------
+Batch: 1
+-------------------------------------------
++----+-----+
+|word|count|
++----+-----+
+| dog|    2|
+| cat|    2|
+|data|    1|
+|send|    1|
+|frog|    1|
++----+-----+
+
+-------------------------------------------
+Batch: 2
+-------------------------------------------
++----+-----+
+|word|count|
++----+-----+
+|fine|    1|
+| dog|    2|
+| cat|    2|
+|data|    1|
+|send|    1|
+|frog|    1|
++----+-----+
+
+-------------------------------------------
+Batch: 3
+-------------------------------------------
++----+-----+
+|word|count|
++----+-----+
+|fine|    1|
+| dog|    5|
+| cat|    3|
+|data|    1|
+|send|    1|
+|frog|    1|
++----+-----+
+
